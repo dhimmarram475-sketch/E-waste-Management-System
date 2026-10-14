@@ -1,0 +1,806 @@
+<html >
+<head>
+  <title>EcoTech – Smart E-Waste Management System</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80">
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <i class="bi bi-recycle me-2"></i>EcoTech
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About E-Waste</a></li>
+            <li class="nav-item"><a class="nav-link" href="#types">E-Waste Types</a></li>
+            <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#disposal">Disposal Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="#centers">Collection Centers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#report">Report E-Waste</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sdgs">SDGs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            
+            <h1 class="hero-title">Smart E-Waste<br /><span class="text-accent">Management</span> System</h1>
+            <p class="hero-subtitle">Recycle Responsibly. Protect Our Planet.</p>
+            <p class="hero-desc">
+              Every year, millions of electronic devices are discarded improperly, releasing toxic substances into
+              our soil, water, and air. Our platform raises awareness and provides guidance for responsible
+              e-waste disposal to protect communities and the environment.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#about" class="btn btn-eco-primary btn-lg">
+                <i class="bi bi-info-circle me-2"></i>Learn About E-Waste
+              </a>
+              <a href="#centers" class="btn btn-eco-outline btn-lg">
+                <i class="bi bi-geo-alt me-2"></i>Find Collection Centers
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="hero-graphic" aria-label="E-waste recycling illustration">
+              <div class="hero-circle">
+                <i class="bi bi-recycle hero-icon"></i>
+              </div>
+              <div class="hero-floating-badge badge-phone"><i class="bi bi-phone"></i> Mobile</div>
+              <div class="hero-floating-badge badge-laptop"><i class="bi bi-laptop"></i> Laptop</div>
+              <div class="hero-floating-badge badge-battery"><i class="bi bi-battery-half"></i> Battery</div>
+              <div class="hero-floating-badge badge-tv"><i class="bi bi-display"></i> TV</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT E-WASTE ===== -->
+    <section id="about" class="section-padding bg-light-custom">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Understanding the Problem</span>
+          <h2 class="section-title">What is E-Waste?</h2>
+          <p class="section-desc">Electronic waste — or e-waste — is any discarded electrical or electronic device. It is one of the fastest-growing waste streams in the world.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="info-card h-100">
+              <div class="info-card-icon"><i class="bi bi-question-circle"></i></div>
+              <h5>What Is E-Waste?</h5>
+              <p>E-waste includes any end-of-life electrical or electronic equipment — from smartphones to refrigerators — that has been discarded or is no longer functional.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-card h-100">
+              <div class="info-card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h5>Why Is It Increasing?</h5>
+              <p>Rapid technological advancement, shorter product lifecycles, and rising consumer demand lead to more devices being replaced and discarded at an accelerating rate.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-card h-100">
+              <div class="info-card-icon"><i class="bi bi-list-check"></i></div>
+              <h5>Common Examples</h5>
+              <p>Phones, computers, tablets, TVs, printers, batteries, chargers, cameras, gaming consoles, and household appliances are all forms of e-waste.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info-card h-100">
+              <div class="info-card-icon"><i class="bi bi-shield-check"></i></div>
+              <h5>Why Disposal Matters</h5>
+              <p>E-waste contains valuable recoverable materials and hazardous substances. Proper disposal protects the environment, human health, and recovers reusable resources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== E-WASTE TYPES ===== -->
+    <section id="types" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Categories</span>
+          <h2 class="section-title">Types of E-Waste</h2>
+          <p class="section-desc">Different electronic devices require different handling. Understand your e-waste category before disposal.</p>
+        </div>
+        <div class="row g-4">
+
+          <!-- Mobile Phones -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="type-card h-100">
+              <div class="type-icon mobile-icon"><i class="bi bi-phone"></i></div>
+              <h5>Mobile Phones</h5>
+              <p>Smartphones and feature phones contain lithium batteries, circuit boards, and toxic metals that require specialized recycling.</p>
+              <div class="disposal-tip"><i class="bi bi-lightbulb me-1"></i><strong>Tip:</strong> Wipe data, remove the SIM card, and hand it to an authorized mobile recycler.</div>
+            </div>
+          </div>
+
+          <!-- Laptops & Computers -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="type-card h-100">
+              <div class="type-icon laptop-icon"><i class="bi bi-laptop"></i></div>
+              <h5>Laptops & Computers</h5>
+              <p>Computers hold hard drives, RAM, capacitors, and potentially hazardous materials such as lead and mercury.</p>
+              <div class="disposal-tip"><i class="bi bi-lightbulb me-1"></i><strong>Tip:</strong> Perform a full factory reset and remove storage drives before dropping off.</div>
+            </div>
+          </div>
+
+          <!-- Televisions -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="type-card h-100">
+              <div class="type-icon tv-icon"><i class="bi bi-display"></i></div>
+              <h5>Televisions</h5>
+              <p>Older CRT and modern flat-panel TVs both contain hazardous components including phosphors, lead, and brominated flame retardants.</p>
+              <div class="disposal-tip"><i class="bi bi-lightbulb me-1"></i><strong>Tip:</strong> Never smash the screen — take whole units to a registered TV recycling point.</div>
+            </div>
+          </div>
+
+          <!-- Batteries -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="type-card h-100">
+              <div class="type-icon battery-icon"><i class="bi bi-battery-half"></i></div>
+              <h5>Batteries</h5>
+              <p>Lead-acid, lithium-ion, and nickel-cadmium batteries are highly toxic and can cause fires if improperly disposed of in landfills.</p>
+              <div class="disposal-tip"><i class="bi bi-lightbulb me-1"></i><strong>Tip:</strong> Tape battery terminals and deposit at a dedicated battery collection bin.</div>
+            </div>
+          </div>
+
+          <!-- Printers -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="type-card h-100">
+              <div class="type-icon printer-icon"><i class="bi bi-printer"></i></div>
+              <h5>Printers</h5>
+              <p>Printers contain toner cartridges, circuit boards, and plastic components that must be separated and recycled appropriately.</p>
+              <div class="disposal-tip"><i class="bi bi-lightbulb me-1"></i><strong>Tip:</strong> Remove and recycle toner cartridges separately through manufacturer take-back programmes.</div>
+            </div>
+          </div>
+
+          <!-- Household Electronics -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="type-card h-100">
+              <div class="type-icon household-icon"><i class="bi bi-house-gear"></i></div>
+              <h5>Household Electronics</h5>
+              <p>Microwaves, hair dryers, electric kettles, and similar appliances contain motors, heating elements, and wiring that can be partially recovered.</p>
+              <div class="disposal-tip"><i class="bi bi-lightbulb me-1"></i><strong>Tip:</strong> Check if any appliance can be repaired before deciding to recycle it.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== E-WASTE IMPACT ===== -->
+    <section id="impact" class="section-padding impact-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Consequences</span>
+          <h2 class="section-title text-white">The Impact of Improper Disposal</h2>
+          <p class="section-desc text-white-muted">When e-waste is dumped in landfills or burned, it poses serious threats to the environment and human health.</p>
+          <small class="text-warning">⚠ The figures below are illustrative/example values for educational purposes only.</small>
+        </div>
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="impact-stat-card text-center">
+              <div class="stat-number">~50M+</div>
+              <div class="stat-label">Tonnes of e-waste generated globally each year <em>(Illustrative)</em></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-stat-card text-center">
+              <div class="stat-number">~20%</div>
+              <div class="stat-label">Of e-waste that is formally recycled in many regions <em>(Illustrative)</em></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-stat-card text-center">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Toxic substances found in electronic devices <em>(Illustrative)</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card h-100">
+              <i class="bi bi-cloud-haze2 impact-card-icon text-warning"></i>
+              <h5>Environmental Pollution</h5>
+              <p>Burning e-waste releases toxic gases including dioxins and furans into the atmosphere, contributing to air pollution and climate change.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card h-100">
+              <i class="bi bi-layers impact-card-icon text-danger"></i>
+              <h5>Soil Contamination</h5>
+              <p>Heavy metals like lead, cadmium, and mercury leach from improperly landfilled e-waste into surrounding soil, making farmland and water sources unsafe.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card h-100">
+              <i class="bi bi-droplet impact-card-icon text-info"></i>
+              <h5>Water Pollution</h5>
+              <p>Toxins from e-waste seep into groundwater, rivers, and lakes, harming aquatic life and contaminating drinking water supplies.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card h-100">
+              <i class="bi bi-gem impact-card-icon text-success"></i>
+              <h5>Resource Loss</h5>
+              <p>Electronic devices contain valuable recoverable materials — gold, silver, copper, rare earth elements — that are permanently lost when e-waste is not recycled properly.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card h-100">
+              <i class="bi bi-heart-pulse impact-card-icon text-danger"></i>
+              <h5>Health &amp; Safety Risks</h5>
+              <p>Communities near informal e-waste processing sites face serious health risks including respiratory disease, neurological damage, and increased cancer risk.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="impact-card h-100">
+              <i class="bi bi-globe-americas impact-card-icon text-warning"></i>
+              <h5>Global Inequity</h5>
+              <p>Much of the world's e-waste is shipped to developing countries where informal workers, including children, process it in dangerous conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DISPOSAL GUIDE ===== -->
+    <section id="disposal" class="section-padding bg-light-custom">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Step-by-Step</span>
+          <h2 class="section-title">Responsible Disposal Guide</h2>
+          <p class="section-desc">Follow these steps to dispose of your electronic devices safely and responsibly.</p>
+        </div>
+
+        <!-- Steps -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card h-100">
+              <div class="step-number">1</div>
+              <h6>Identify the Item</h6>
+              <p>Determine what type of electronic device you have and understand what materials it may contain.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card h-100">
+              <div class="step-number">2</div>
+              <h6>Reuse or Repair?</h6>
+              <p>Check whether the device can be repaired, donated, or sold before considering disposal. Extending device life is the most sustainable option.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card h-100">
+              <div class="step-number">3</div>
+              <h6>Remove Personal Data</h6>
+              <p>Perform a factory reset on phones and computers. Use data-wiping software for storage devices to protect your personal information.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card h-100">
+              <div class="step-number">4</div>
+              <h6>Separate Batteries</h6>
+              <p>Remove batteries from devices where possible. Batteries must be disposed of separately at designated battery collection points.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card h-100">
+              <div class="step-number">5</div>
+              <h6>Find a Facility</h6>
+              <p>Locate an authorized e-waste collection centre or manufacturer take-back programme near you. Use our collection center finder below.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="step-card h-100">
+              <div class="step-number">6</div>
+              <h6>Dispose Responsibly</h6>
+              <p>Drop off your e-waste at the authorized facility. Ask for a receipt or confirmation if available, especially for bulk items.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Do / Don't -->
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="do-card">
+              <h5 class="mb-3"><i class="bi bi-check-circle-fill me-2 text-success"></i>Do</h5>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-check2 text-success me-2"></i>Use authorized e-waste collection centers</li>
+                <li><i class="bi bi-check2 text-success me-2"></i>Wipe personal data before handing over devices</li>
+                <li><i class="bi bi-check2 text-success me-2"></i>Separate batteries from the main device</li>
+                <li><i class="bi bi-check2 text-success me-2"></i>Donate working electronics to those in need</li>
+                <li><i class="bi bi-check2 text-success me-2"></i>Ask about manufacturer take-back programmes</li>
+                <li><i class="bi bi-check2 text-success me-2"></i>Repair devices when economically feasible</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dont-card">
+              <h5 class="mb-3"><i class="bi bi-x-circle-fill me-2 text-danger"></i>Don't</h5>
+              <ul class="list-unstyled mb-0">
+                <li><i class="bi bi-x text-danger me-2"></i>Throw electronics into regular household waste</li>
+                <li><i class="bi bi-x text-danger me-2"></i>Burn or incinerate e-waste informally</li>
+                <li><i class="bi bi-x text-danger me-2"></i>Smash or break devices in an uncontrolled way</li>
+                <li><i class="bi bi-x text-danger me-2"></i>Leave batteries loose in bins — tape the terminals</li>
+                <li><i class="bi bi-x text-danger me-2"></i>Pour chemicals from devices down drains</li>
+                <li><i class="bi bi-x text-danger me-2"></i>Hand devices to unverified/informal collectors</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COLLECTION CENTERS ===== -->
+    <section id="centers" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Find a Drop-Off Point</span>
+          <h2 class="section-title">E-Waste Collection Centers</h2>
+          <p class="section-desc">
+            Locate authorized e-waste collection and recycling facilities near you.
+            <span class="badge bg-warning text-dark ms-2">DEMO / SAMPLE DATA</span>
+          </p>
+        </div>
+
+        <!-- Search & Filter -->
+        <div class="row g-3 mb-4 justify-content-center">
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" id="centerSearch" class="form-control" placeholder="Search by name or location…" aria-label="Search collection centers" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <select id="categoryFilter" class="form-select" aria-label="Filter by category">
+              <option value="">All Categories</option>
+              <option value="mobile">Mobile Phones</option>
+              <option value="computer">Computers & Laptops</option>
+              <option value="battery">Batteries</option>
+              <option value="appliance">Appliances</option>
+              <option value="all">All E-Waste</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <button id="resetFilter" class="btn btn-outline-secondary w-100">
+              <i class="bi bi-arrow-counterclockwise me-1"></i>Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Centers Grid -->
+        <div class="row g-4" id="centersGrid">
+
+          <div class="col-md-6 col-lg-4 center-item" data-name="greenrecycle city center" data-category="all">
+            <div class="center-card h-100">
+              <div class="center-badge badge-all">All E-Waste</div>
+              <h5 class="center-name">GreenRecycle City Center</h5>
+              <p class="center-location"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>Downtown – Zone A, City Center</p>
+              <div class="center-detail"><i class="bi bi-recycle me-1"></i><strong>Accepts:</strong> All electronic waste</div>
+              <div class="center-detail"><i class="bi bi-clock me-1"></i><strong>Hours:</strong> Mon–Sat: 9:00 AM – 6:00 PM</div>
+              <button class="btn btn-eco-primary btn-sm mt-3 w-100" data-bs-toggle="modal" data-bs-target="#centerModal"
+                data-name="GreenRecycle City Center" data-location="Downtown – Zone A, City Center"
+                data-accepts="All electronic waste including phones, computers, batteries, TVs, and appliances"
+                data-hours="Monday–Saturday: 9:00 AM – 6:00 PM | Sunday: Closed"
+                data-contact="Sample Contact: 1800-ECO-TECH">
+                <i class="bi bi-info-circle me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 center-item" data-name="techrecycle mobile hub" data-category="mobile">
+            <div class="center-card h-100">
+              <div class="center-badge badge-mobile">Mobile Phones</div>
+              <h5 class="center-name">TechRecycle Mobile Hub</h5>
+              <p class="center-location"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>North District, Tech Street</p>
+              <div class="center-detail"><i class="bi bi-recycle me-1"></i><strong>Accepts:</strong> Mobile phones &amp; tablets</div>
+              <div class="center-detail"><i class="bi bi-clock me-1"></i><strong>Hours:</strong> Mon–Fri: 10:00 AM – 7:00 PM</div>
+              <button class="btn btn-eco-primary btn-sm mt-3 w-100" data-bs-toggle="modal" data-bs-target="#centerModal"
+                data-name="TechRecycle Mobile Hub" data-location="North District, Tech Street"
+                data-accepts="Mobile phones, smartphones, tablets, and chargers"
+                data-hours="Monday–Friday: 10:00 AM – 7:00 PM | Weekends: 11:00 AM – 4:00 PM"
+                data-contact="Sample Contact: 1800-MOB-RECYCLE">
+                <i class="bi bi-info-circle me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 center-item" data-name="eco power battery depot" data-category="battery">
+            <div class="center-card h-100">
+              <div class="center-badge badge-battery">Batteries</div>
+              <h5 class="center-name">Eco Power Battery Depot</h5>
+              <p class="center-location"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>East Industrial Area, Block 7</p>
+              <div class="center-detail"><i class="bi bi-recycle me-1"></i><strong>Accepts:</strong> All battery types</div>
+              <div class="center-detail"><i class="bi bi-clock me-1"></i><strong>Hours:</strong> Mon–Sat: 8:00 AM – 5:00 PM</div>
+              <button class="btn btn-eco-primary btn-sm mt-3 w-100" data-bs-toggle="modal" data-bs-target="#centerModal"
+                data-name="Eco Power Battery Depot" data-location="East Industrial Area, Block 7"
+                data-accepts="Lead-acid, lithium-ion, nickel-cadmium, and AA/AAA batteries"
+                data-hours="Monday–Saturday: 8:00 AM – 5:00 PM | Sunday: Closed"
+                data-contact="Sample Contact: 1800-BAT-DEPOT">
+                <i class="bi bi-info-circle me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 center-item" data-name="computercycle it solutions" data-category="computer">
+            <div class="center-card h-100">
+              <div class="center-badge badge-computer">Computers & Laptops</div>
+              <h5 class="center-name">ComputerCycle IT Solutions</h5>
+              <p class="center-location"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>West Business Park, IT Hub</p>
+              <div class="center-detail"><i class="bi bi-recycle me-1"></i><strong>Accepts:</strong> Laptops, desktops &amp; peripherals</div>
+              <div class="center-detail"><i class="bi bi-clock me-1"></i><strong>Hours:</strong> Mon–Fri: 9:00 AM – 6:00 PM</div>
+              <button class="btn btn-eco-primary btn-sm mt-3 w-100" data-bs-toggle="modal" data-bs-target="#centerModal"
+                data-name="ComputerCycle IT Solutions" data-location="West Business Park, IT Hub"
+                data-accepts="Laptops, desktop computers, monitors, keyboards, mice, and printers"
+                data-hours="Monday–Friday: 9:00 AM – 6:00 PM | Weekends: By appointment"
+                data-contact="Sample Contact: 1800-COMP-CYCLE">
+                <i class="bi bi-info-circle me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 center-item" data-name="home appliance recyclers" data-category="appliance">
+            <div class="center-card h-100">
+              <div class="center-badge badge-appliance">Appliances</div>
+              <h5 class="center-name">Home Appliance Recyclers</h5>
+              <p class="center-location"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>South Suburb, Recycle Road</p>
+              <div class="center-detail"><i class="bi bi-recycle me-1"></i><strong>Accepts:</strong> Household appliances</div>
+              <div class="center-detail"><i class="bi bi-clock me-1"></i><strong>Hours:</strong> Tue–Sun: 10:00 AM – 5:00 PM</div>
+              <button class="btn btn-eco-primary btn-sm mt-3 w-100" data-bs-toggle="modal" data-bs-target="#centerModal"
+                data-name="Home Appliance Recyclers" data-location="South Suburb, Recycle Road"
+                data-accepts="Microwaves, washing machines, refrigerators, TVs, air conditioners"
+                data-hours="Tuesday–Sunday: 10:00 AM – 5:00 PM | Monday: Closed"
+                data-contact="Sample Contact: 1800-APPL-RECYCLE">
+                <i class="bi bi-info-circle me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 center-item" data-name="campus ecopoint university" data-category="all">
+            <div class="center-card h-100">
+              <div class="center-badge badge-all">All E-Waste</div>
+              <h5 class="center-name">Campus EcoPoint</h5>
+              <p class="center-location"><i class="bi bi-geo-alt-fill me-1 text-danger"></i>University Campus, Main Gate</p>
+              <div class="center-detail"><i class="bi bi-recycle me-1"></i><strong>Accepts:</strong> Small electronics</div>
+              <div class="center-detail"><i class="bi bi-clock me-1"></i><strong>Hours:</strong> Mon–Fri: 8:00 AM – 8:00 PM</div>
+              <button class="btn btn-eco-primary btn-sm mt-3 w-100" data-bs-toggle="modal" data-bs-target="#centerModal"
+                data-name="Campus EcoPoint" data-location="University Campus, Main Gate"
+                data-accepts="Phones, laptops, small appliances, batteries, and cables accepted from students &amp; staff"
+                data-hours="Monday–Friday: 8:00 AM – 8:00 PM | Saturday: 9:00 AM – 3:00 PM | Sunday: Closed"
+                data-contact="Sample Contact: Campus Helpdesk ext. 400">
+                <i class="bi bi-info-circle me-1"></i>View Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- No results message -->
+        <div id="noResults" class="text-center py-5 d-none">
+          <i class="bi bi-search fs-1 text-muted"></i>
+          <p class="mt-2 text-muted">No collection centers match your search. Try different keywords or reset the filter.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Center Details Modal -->
+    <div class="modal fade" id="centerModal" tabindex="-1" aria-labelledby="centerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header modal-eco-header">
+            <h5 class="modal-title" id="centerModalLabel">Center Details</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <span class="badge bg-warning text-dark mb-3">SAMPLE / DEMO DATA</span>
+            <div class="mb-2"><strong><i class="bi bi-building me-2"></i>Name:</strong> <span id="modalName"></span></div>
+            <div class="mb-2"><strong><i class="bi bi-geo-alt me-2"></i>Location:</strong> <span id="modalLocation"></span></div>
+            <div class="mb-2"><strong><i class="bi bi-recycle me-2"></i>Accepts:</strong> <span id="modalAccepts"></span></div>
+            <div class="mb-2"><strong><i class="bi bi-clock me-2"></i>Hours:</strong> <span id="modalHours"></span></div>
+            <div class="mb-2"><strong><i class="bi bi-telephone me-2"></i>Contact:</strong> <span id="modalContact"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== REPORT E-WASTE ===== -->
+    <section id="report" class="section-padding bg-light-custom">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Take Action</span>
+          <h2 class="section-title">Report E-Waste</h2>
+          <p class="section-desc">
+            Use this form to report e-waste in your area or request a pickup.
+            <span class="badge bg-warning text-dark ms-2">College Project – Demo Only</span>
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <!-- Success Alert (hidden by default) -->
+            <div id="reportSuccess" class="alert alert-success alert-dismissible d-none" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              <strong>Thank you!</strong> Your e-waste report has been recorded.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <div class="report-form-wrapper">
+              <form id="reportForm" novalidate>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Your full name" required minlength="3" />
+                    <div class="invalid-feedback">Please enter your full name (at least 3 characters).</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="emailAddr" class="form-label">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="emailAddr" placeholder="you@example.com" required />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phoneNum" class="form-label">Phone Number <small class="text-muted">(Optional)</small></label>
+                    <input type="tel" class="form-control" id="phoneNum" placeholder="+1 234 567 8900" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="locationField" class="form-label">Location / Address <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="locationField" placeholder="City, Area, Street" required />
+                    <div class="invalid-feedback">Please provide your location.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="ewasteType" class="form-label">Type of E-Waste <span class="text-danger">*</span></label>
+                    <select class="form-select" id="ewasteType" required>
+                      <option value="">Select a category…</option>
+                      <option>Mobile Phones / Tablets</option>
+                      <option>Laptops / Computers</option>
+                      <option>Televisions / Monitors</option>
+                      <option>Batteries</option>
+                      <option>Printers / Copiers</option>
+                      <option>Household Appliances</option>
+                      <option>Cables / Accessories</option>
+                      <option>Mixed / Other</option>
+                    </select>
+                    <div class="invalid-feedback">Please select an e-waste type.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="quantity" class="form-label">Approximate Quantity <span class="text-danger">*</span></label>
+                    <select class="form-select" id="quantity" required>
+                      <option value="">Select quantity…</option>
+                      <option>1 item</option>
+                      <option>2–5 items</option>
+                      <option>6–10 items</option>
+                      <option>More than 10 items</option>
+                    </select>
+                    <div class="invalid-feedback">Please select an approximate quantity.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="description" class="form-label">Description <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="description" rows="4"
+                      placeholder="Briefly describe the e-waste items, their condition, and any special notes…" required minlength="10"></textarea>
+                    <div class="invalid-feedback">Please provide a description (at least 10 characters).</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="imageUpload" class="form-label">Upload Image <small class="text-muted">(Optional – .jpg, .png, .gif)</small></label>
+                    <input class="form-control" type="file" id="imageUpload" accept="image/*" />
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consentCheck" required />
+                      <label class="form-check-label" for="consentCheck">
+                        I understand this is a <strong>demonstration form</strong> and my details will be stored in the project database. <span class="text-danger">*</span>
+                      </label>
+                      <div class="invalid-feedback">You must acknowledge the demo nature of this form.</div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-eco-primary btn-lg px-5">
+                      <i class="bi bi-send me-2"></i>Submit Report
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SDG ALIGNMENT ===== -->
+    <section id="sdgs" class="section-padding sdg-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">United Nations</span>
+          <h2 class="section-title">SDG Alignment</h2>
+          <p class="section-desc">Our Smart E-Waste Management System directly supports the following UN Sustainable Development Goals.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="sdg-card sdg-11 h-100">
+              <div class="sdg-number">SDG 11</div>
+              <div class="sdg-icon"><i class="bi bi-buildings"></i></div>
+              <h5>Sustainable Cities &amp; Communities</h5>
+              <p>Proper e-waste management reduces urban environmental hazards, supports clean infrastructure, and promotes resource-efficient communities. Our platform helps residents locate disposal points within their city.</p>
+              <div class="sdg-targets">
+                <span class="sdg-target-badge">Target 11.6</span>
+                <span class="sdg-target-badge">Urban Waste Management</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="sdg-card sdg-12 h-100">
+              <div class="sdg-number">SDG 12</div>
+              <div class="sdg-icon"><i class="bi bi-arrow-repeat"></i></div>
+              <h5>Responsible Consumption &amp; Production</h5>
+              <p>By encouraging repair, reuse, and recycling, we promote sustainable consumption patterns. Our platform educates users about the full lifecycle of electronic products.</p>
+              <div class="sdg-targets">
+                <span class="sdg-target-badge">Target 12.4</span>
+                <span class="sdg-target-badge">Target 12.5</span>
+                <span class="sdg-target-badge">Circular Economy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="sdg-card sdg-13 h-100">
+              <div class="sdg-number">SDG 13</div>
+              <div class="sdg-icon"><i class="bi bi-globe-americas"></i></div>
+              <h5>Climate Action</h5>
+              <p>Reducing informal e-waste burning decreases toxic greenhouse gas emissions. Recovering materials through recycling reduces the energy cost of mining new raw materials, cutting carbon emissions.</p>
+              <div class="sdg-targets">
+                <span class="sdg-target-badge">Climate Awareness</span>
+                <span class="sdg-target-badge">GHG Reduction</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AWARENESS / TIPS ===== -->
+    <section id="tips" class="section-padding bg-light-custom">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-tag">Make a Difference</span>
+          <h2 class="section-title">Small Actions, Big Impact</h2>
+          <p class="section-desc">Every individual choice matters. Here are practical steps you can take today.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4">
+            <div class="tip-card h-100">
+              <i class="bi bi-tools tip-icon"></i>
+              <h6>Repair Before Replacing</h6>
+              <p>Many electronic issues can be fixed cheaply by a technician. Repairing extends the product's useful life and delays it entering the waste stream.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="tip-card h-100">
+              <i class="bi bi-gift tip-icon"></i>
+              <h6>Donate Usable Electronics</h6>
+              <p>A device that's outdated for you may be valuable to a school, charity, or community centre. Donate before you discard.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="tip-card h-100">
+              <i class="bi bi-recycle tip-icon"></i>
+              <h6>Recycle Responsibly</h6>
+              <p>Always use authorized e-waste facilities. Never hand devices to informal collectors or leave them at the side of the road.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="tip-card h-100">
+              <i class="bi bi-cart-x tip-icon"></i>
+              <h6>Buy Only What You Need</h6>
+              <p>Avoid upgrading devices unnecessarily. Mindful purchasing reduces the total volume of e-waste generated over time.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="tip-card h-100">
+              <i class="bi bi-trash-fill tip-icon text-danger"></i>
+              <h6>Never Use General Bins</h6>
+              <p>Electronic devices must never be thrown into regular household waste bins. They require separate, specialist recycling streams.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="tip-card h-100">
+              <i class="bi bi-shield-lock tip-icon"></i>
+              <h6>Protect Personal Data</h6>
+              <p>Always perform a factory reset and use data-wiping software on storage devices before recycling or donating electronics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="footer-brand">
+            <i class="bi bi-recycle me-2"></i>EcoTech
+          </div>
+          <p class="footer-desc">
+            A Smart E-Waste Management System designed to raise awareness, educate communities, and promote responsible disposal of electronic waste.
+          </p>
+          <div class="footer-sdg-badges">
+            <span class="sdg-chip sdg-chip-11">SDG 11</span>
+            <span class="sdg-chip sdg-chip-12">SDG 12</span>
+            <span class="sdg-chip sdg-chip-13">SDG 13</span>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-heading">Navigate</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About E-Waste</a></li>
+            <li><a href="#types">E-Waste Types</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#disposal">Disposal Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#centers">Collection Centers</a></li>
+            <li><a href="#report">Report E-Waste</a></li>
+            <li><a href="#sdgs">SDG Alignment</a></li>
+            <li><a href="#tips">Tips</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
