@@ -1,22 +1,8 @@
-/* ============================================================
-   EcoTech – Smart E-Waste Management System
-   script.js  |  College Project – Phase 1
-   ============================================================
-
-   API_BASE points to the Express backend.
-   When opening index.html via the Node server (http://localhost:3000)
-   this resolves correctly. If you still open the file directly with
-   Live Server on a different port, change API_BASE to the full URL:
-     const API_BASE = 'http://localhost:3000/api';
-   ============================================================ */
-
 const API_BASE = window.location.port === '3000'
   ? '/api'                        // served by Express
   : 'http://localhost:3000/api';  // opened via Live Server / file://
 
-/* -----------------------------------------------------------------------
-   1. NAVBAR – active link highlighting on scroll
-   ----------------------------------------------------------------------- */
+/* 1. NAVBAR – active link highlighting on scroll */
 (function () {
   'use strict';
 
@@ -54,9 +40,7 @@ const API_BASE = window.location.port === '3000'
 })();
 
 
-/* -----------------------------------------------------------------------
-   2. BACK-TO-TOP BUTTON
-   ----------------------------------------------------------------------- */
+// 2. BACK-TO-TOP BUTTON //
 (function () {
   const btn = document.getElementById('backToTop');
   if (!btn) return;
@@ -71,11 +55,7 @@ const API_BASE = window.location.port === '3000'
 })();
 
 
-/* -----------------------------------------------------------------------
-   3. COLLECTION CENTER SEARCH & FILTER
-      Fetches live data from GET /api/centers?search=&category=
-      Falls back to DOM-only filtering if the API is unreachable.
-   ----------------------------------------------------------------------- */
+// 3. COLLECTION CENTER SEARCH & FILTER Fetches live data from GET /api/centers?search=&category=Falls back to DOM-only filtering if the API is unreachable.//
 (function () {
   const searchInput    = document.getElementById('centerSearch');
   const categoryFilter = document.getElementById('categoryFilter');
